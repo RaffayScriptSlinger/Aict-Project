@@ -1,0 +1,77 @@
+.mainNavContainer{
+    width: auto;
+    height: 60px;
+    box-shadow: 2px 2px 12px gray;
+}
+.subNavContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navImg{
+    width: 50px;
+    height: 50px;
+}
+.navImgContainer{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.navUl{
+    display: flex;
+    list-style: none;
+}
+.navLi{
+    margin: 10px;
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+.navBtn{
+    margin: 15px;
+}
+.navButton{
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    font-weight: 700;
+}
+
+/* Hero Section Css */
+.heroSection{
+    
+     align-items: center; 
+     border: 2px solid yellow;
+    
+    
+}
+.heroMainDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+.heroText{
+    width: 500px;
+    height: 200px;
+    border: 2px solid gainsboro;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    font-size: larger;
+}
+.heroDivImg img{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
