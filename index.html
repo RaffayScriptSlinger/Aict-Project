@@ -9,20 +9,20 @@
   </head>
   <body>
     <!-- Header Section -->
-    <nav class="mainNavContainer">
+    <nav class="mainNavContainer" id="home">
       <div class="subNavContainer">
         <div class="navImgContainer">
           <img src="./images/favicon (2).png" class="navImg" alt="" />
         </div>
         <div>
           <ul class="navUl">
-            <li class="navLi">Home</li>
-            <li class="navLi">About</li>
-            <li class="navLi">Contact Us</li>
+            <li class="navLi"><a href="#home">Home</a></li>
+            <li class="navLi"><a href="#about">About</a></li>
+            <li class="navLi"><a href="#contactus">Contact Us</a></li>
           </ul>
         </div>
         <div class="navBtn">
-          <button class="navButton">Donate Now</button>
+          <button class="navButton"><a href="#contactus">Donate Now</a></button>
         </div>
       </div>
     </nav>
@@ -30,16 +30,125 @@
     <main class="heroSection">
       <div class="heroMainDiv">
         <div class="heroDivImg">
-          <img src="./images/favicon (2).png" alt="" />
+          <img src="./images/heroSectionImg.png" alt="" />
         </div>
         <div class="heroText">
           <h1>Save Life Donate Blood</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusamus
-          error doloribus illum expedita libero officia pariatur rerum tempore
-          assumenda reiciendis molestias, ratione explicabo illo nobis iure,
-          incidunt facere nisi?
+          <p>
+            Every drop counts. By donating blood, you have the power to save
+            lives and bring hope to those in need. Join us in making a
+            difference—your simple act of kindness can be a lifeline for someone
+            fighting for survival. Save life, donate blood, and be someone's
+            hero today.
+          </p>
         </div>
       </div>
     </main>
+    <!-- About Us -->
+    <div class="mainAboutContainer" id="about">
+      <h1 class="donation-heading">Donation Process</h1>
+      <p class="donation-text">
+        The donation service from the time you arrive center until the time you
+        have
+      </p>
+      <div class="boxContainer">
+        <div class="box">
+          <img src="./images/aboutRegistrationImg.avif" alt="" />
+          <h2>Registration</h2>
+          <p>
+            Register now to become a part of our community and stay updated with
+            the latest events, offers, and services. Quick and easy
+            registration!
+          </p>
+        </div>
+        <div class="box">
+          <img src="./images/aboutScreeningImg.avif" alt="" />
+          <h2>Screening</h2>
+          <p>
+            Screening helps us ensure the safety and well-being of our donors by
+            evaluating their health before donation
+          </p>
+        </div>
+        <div class="box">
+          <img src="./images/aboutBloodDonationImg.avif" alt="" />
+          <h2>Donation</h2>
+          <p>
+            Donate now to support our cause and make a positive impact in the
+            community. Stay informed about upcoming donation drives and events.
+            Quick and easy donation process!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Volunteers Section -->
+    <div class="mainVolunteerContainer">
+      <h1 class="donation-heading">Our Volunteers</h1>
+      <p class="donation-text">
+        Volunteers who give their valuable time play a vital role in helping us
+        achieve our mission.
+      </p>
+      <div class="mainVolunteerBox">
+        <div class="volunteerBox">
+          <img src="./images/doctorImageOne.avif" alt="" />
+          <h2>Javed Jacobson</h2>
+          <h3>Co-Founder</h3>          
+        </div>
+        <div class="volunteerBox">
+          <img src="./images/doctorImageTwo.avif" alt="" />
+          <h2 class="">Martin Munoz</h2>
+          <h3>Founder</h3>
+        </div>
+        <div class="volunteerBox">
+          <img src="./images/doctorImageThree.jpg" alt="" />
+          <h2>John Darepho</h2>
+          <h3>Manager</h3>
+        </div>
+      </div>
+    </div>
+    <div class="advertiseContainer">
+      <h1>WE ARE HELPING PEOPLE FROM 40 YEARS</h1>
+      <h3>You can donate blood at our official donation centers or mobile camps near you. Every drop counts and helps save lives. Visit your nearest donation venue and make a difference</h3>
+      <div id="btnForAdvertise">
+        <button class="navButton" ><a href="#contactus">Become A Donor</a> </button>
+      </div>
+      
+    </div>
+    <div class="conclusionContainer" id="contactus">
+      <div class="conclusionTextContainer">
+       <h1>Donate Now</h1>
+        <ul>
+          <li>Contact Number</li>
+          <h3>03337761340</h3>
+          <li>Email</li>
+          <h3>raffaysharjeel@gmail.com</h3>
+          <li>Address</li>
+          <h3>iqra University Airport Campus</h3>
+        </ul> 
+      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.84617373355!2d67.1694301744305!3d24.88569374424923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339ee14586faf%3A0x752c9ecf2ebaf4d8!2sIqra%20University%20-%20Airport%20Campus!5e1!3m2!1sen!2s!4v1747207801648!5m2!1sen!2s" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="conclusionImage">
+        <img src="./images/advertise_Image-removebg-preview.png" alt="">
+      </div>
+      
+
+    </div>
+    <footer>
+      <div class="footerContainer">
+        <div class="">
+          <img src="./images/favicon (2).png" width="50px" height="50px" alt="">
+        </div>
+        <div class="footerCenter">
+          <a href="#home">Home</a>
+          <br>
+          <a href="#about">About Us</a>
+          <br>
+          <a href="#contactus">Contact Us</a>
+        </div>
+        <div>
+          Copyright@--RaffaySharjeel--2025
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

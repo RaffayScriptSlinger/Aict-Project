@@ -1,77 +1,342 @@
-.mainNavContainer{
+body {
+    max-width: 1500px;
+    margin: 0 auto;     
+    padding: 0 20px;    
+    overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.mainNavContainer {
     width: auto;
     height: 60px;
     box-shadow: 2px 2px 12px gray;
 }
-.subNavContainer{
+@media (max-width:600px) {
+    .mainNavContainer {
+    width: auto;
+    height: auto;
+    box-shadow: 2px 2px 12px gray;
+}
+.navLi {
+    display: none;
+}
+}
+
+.subNavContainer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.navImg{
+
+.navImg {
     width: 50px;
     height: 50px;
 }
-.navImgContainer{
-    display : flex;
+
+.navImgContainer {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
 }
-.navUl{
+
+.navUl {
     display: flex;
     list-style: none;
 }
-.navLi{
+
+.navLi {
     margin: 10px;
     color: red;
     font-weight: 700;
     font-size: 20px;
-    
+    transition: all 0.2s ease-in-out;
+}
+.navLi > a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }
 
-.navBtn{
+.navLi:hover {
+    background-color: rgba(230, 0, 35, 0.1);
+    color: #c5001f;
+    border-radius: 9999px;
+
+}
+
+.navBtn {
     margin: 15px;
 }
-.navButton{
-    padding: 5px;
+
+.navButton {
+    padding: 10px 20px;
     color: white;
-    border-radius: 10px;
-    background-color: red;
-    font-weight: 700;
+    background: linear-gradient(135deg, #e60023, #ff4b5c);
+    border: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(230, 0, 35, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+.navButton > a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.navButton:hover {
+    background: linear-gradient(135deg, #c5001f, #ff2e40);
+    box-shadow: 0 6px 15px rgba(230, 0, 35, 0.5);
+    transform: translateY(-2px);
+    
 }
 
 /* Hero Section Css */
-.heroSection{
-    
-     align-items: center; 
-     border: 2px solid yellow;
-    
-    
+.heroSection {
+    align-items: center;
+    margin-top: 50px;
+    height: fit-content; 
+    padding: 50px;
+}
+@media (max-width:600px){
+    .heroSection{
+        margin-top: 25px;
+        padding: 15px;
+    }
 }
 .heroMainDiv {
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    flex-wrap: wrap;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-.heroText{
-    width: 500px;
-    height: 200px;
-    border: 2px solid gainsboro;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    
-    font-size: larger;
 }
-.heroDivImg img{
-    border: 2px solid red;
+
+.heroText {
+    width: 500px;
+    height: auto;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heroText h1 {
+    color: red;
+}
+
+.heroDivImg img {
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    width: 500px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media (max-width:600px) {
+    .heroDivImg img {
+        width: auto;
+    }
+}
+
+/* About Section Css */
+
+.donation-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  
+}
+
+.donation-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+@media (max-width:600px) {
+    .boxContainer{
+         padding: 10px;
+         height: fit-content;
+
+    }
+
+    
+}
+
+.box {
+    box-shadow: 15px 5px 22px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    max-width: fit-content;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.box>h2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #c5001f;
+}
+
+.box>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+@media (max-width:600px) {
+    .box>p{
+        width: 100%;
+        height: auto;
+    }
+    .box{
+        height: fit-content;
+    }
+    
+}
+
+/* Volunteer Css */
+
+.mainVolunteerBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 45px;
+}
+
+.volunteerBox>img {
+    width: 300px;
+    object-fit: cover;
+    height: auto;
+}
+
+@media (max-width:600px) {
+    .volunteerBox>img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}    
+}
+
+.volunteerBox>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c5001f;
+}
+
+.volunteerBox>h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+/* advertise Css */
+.advertiseContainer {
+    padding: 100px;
+    background-color: red;
+    color: white;
+}
+
+.advertiseContainer>h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertiseContainer>h3 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#btnForAdvertise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:600px) {
+    .advertiseContainer {
+        padding: 10px;
+        background-color: red;
+        color: white;
+    }
+}
+
+/* Comclusion Css */
+.conclusionContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ .conclusionImage > img{
+    width: 400px;
+    object-fit: cover;
+    height: auto;
+}
+.conclusionTextContainer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:600px) {
+    .conclusionImage > img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+iframe{
+    width: 100%;
+}
+}
+/* footer Css */
+.footerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 15px 5px 22px rgba(0, 0, 0, 0.2);
+}
+.footerCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footerCenter > a{
+    list-style: none;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
